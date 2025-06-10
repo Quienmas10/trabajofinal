@@ -1,0 +1,6 @@
+ID,Tipo,Tiempo_Procesamiento,Errores,Prioridad
+000,Licencia,5,Ninguno,Alta
+001,Permiso,3,Falta_Dato,Media
+002,Servicio,7,Ninguno,Baja
+003,Licencia,4,Falta_Firma,Alta
+004,Permiso,2,Ninguno,Media

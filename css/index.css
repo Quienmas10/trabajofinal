@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Contenedor superior */
+.header-container {
+    background-color: #A52A2A; /* Color terracota/ladrillo peruano */
+    color: #FFF8E7; /* Crema claro para contraste */
+    padding: 20px 0;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .header-title {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 657px; /* Ajusta según tu imagen */
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Overlay para el formulario de login */
+.login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente más oscuro para mejor contraste */
+}
+
+/* Formulario de login */
+.login-section {
+    background: #FFFFFF; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    border: 2px solid #A52A2A; /* Borde terracota */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.login-section:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.login-section h3 {
+    color: #A52A2A; /* Título en terracota */
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Estilos para inputs */
+.form-control {
+    border: 1px solid #A52A2A; /* Borde terracota */
+    border-radius: 8px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #D4A017; /* Dorado al hacer foco */
+    box-shadow: 0 0 5px rgba(212, 160, 23, 0.5);
+}
+
+/* Estilos para etiquetas */
+.form-label {
+    color: #2c3e50; /* Azul oscuro */
+    font-weight: 600;
+}
+
+/* Estilos para alertas */
+.alert {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos para botones */
+.btn-primary {
+    background-color: #D3D3D3; /* Gris claro para "Trámites" */
+    border-color: #D3D3D3;
+    color: #2c3e50; /* Texto oscuro para contraste */
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B0B0B0; /* Gris más oscuro al hover */
+    border-color: #B0B0B0;
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-info {
+    background-color: #D4A017; /* Dorado para "Administrador" */
+    border-color: #D4A017;
+    color: #2c3e50; /* Texto oscuro para contraste */
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-info:hover {
+    background-color: #B88B14; /* Dorado más oscuro al hover */
+    border-color: #B88B14;
+    transform: translateY(-2px);
+}
+
+.login-section .btn-primary {
+    background-color: #C04040; /* Terracota claro para "Iniciar Sesión" */
+    border-color: #C04040;
+    color: #FFF8E7; /* Texto crema para contraste */
+    width: 100%; /* Botón ocupa todo el ancho */
+    margin-top: 10px;
+}
+
+.login-section .btn-primary:hover {
+    background-color: #A52A2A; /* Terracota original al hover */
+    border-color: #A52A2A;
+    transform: translateY(-2px);
+}
+
+/* Ajustes para botones en móviles */
+@media (max-width: 767px) {
+    .text-md-end {
+        text-align: center !important;
+    }
+    .btn {
+        display: inline-block;
+        margin: 5px;
+    }
+}
